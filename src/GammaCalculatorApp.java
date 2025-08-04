@@ -33,6 +33,13 @@ public class GammaCalculatorApp {
         JTextField input = new JTextField();
         JLabel result = new JLabel("Result:");
         JButton compute = new JButton("Compute Γ(x)");
+        // Accessibility improvements
+        input.getAccessibleContext().setAccessibleName("Gamma Input Field");
+        input.getAccessibleContext().setAccessibleDescription("Enter any real number except non-positive integers");
+        compute.getAccessibleContext().setAccessibleName("Compute Button");
+        compute.getAccessibleContext().setAccessibleDescription("Computes Gamma of entered value");
+        result.getAccessibleContext().setAccessibleName("Result Display");
+
 
         compute.addActionListener(e -> {
             try {
