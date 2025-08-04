@@ -1,3 +1,9 @@
+/**
+ * Gamma Function Calculator
+ * Version: 1.0
+ * Author: Balaji
+ */
+
 import javax.swing.*;
 import java.awt.*;
 
